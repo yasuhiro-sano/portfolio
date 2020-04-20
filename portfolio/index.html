@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang=ja dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsve.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/20373834b1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- ハンバーガーメニュー始まり  -->
+    <div class="ham" id="ham">
+      <span class="ham_line ham_line1"></span>
+      <span class="ham_line ham_line2"></span>
+      <span class="ham_line ham_line3"></span>
+    </div>
+    <div class="menu_wrapper" id="menu_wrapper">
+      <div class="menu">
+        <ul class="menu_list">
+          <li><a href="#top">top</a></li>
+          <li><a href="#works">works</a></li>
+          <ul class="menu_inner">
+            <li><a href="#">Web・プログラミング</a></li>
+            <li><a href="#">動画編集</a></li>
+            <li><a href="#">趣味</a></li>
+          </ul>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="#">blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ハンバーガーメニュー終わり  -->
+
+    <header>
+      <div class="logo_bg" id="top">
+        <div class="container">
+          <div class="logo">
+            <img src="img\logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </header>
+    <a class="scroll" href="#main"><span class="scroll_s"></span><span class="scroll_s"></span><span class="scroll_s"></span><strong>Scroll</strong></a>
+    <main id="main">
+      <div class="container">
+        <div class="menu_box">
+          <div class="menu_first fadeinup">
+            <a href="#top" class="link_btn btn_top">top</a>
+          </div>
+          <div class="m_v_line fadeinup">
+            <span class="verticel_line v_line1"></span>
+          </div>
+          <div class="m_w_line fadeinup">
+            <span class="width_line w_line1"></span>
+          </div>
+          <div class="m_v_line fadeinup">
+            <span class="verticel_line v_line2"></span>
+            <span class="verticel_line v_line3"></span>
+            <span class="verticel_line v_line4"></span>
+            <span class="verticel_line v_line5"></span>
+          </div>
+          <div class="menu_second flex fadeinup">
+            <a href="#profile" class="link_btn">profile</a>
+            <a href="#works" class="link_btn">works</a>
+            <a href="#contact" class="link_btn">contact</a>
+            <a href="#" class="link_btn">blog</a>
+          </div>
+          <div class="m_v_line fadeinup">
+            <span class="verticel_line v_line3"></span>
+          </div>
+          <div class="m_w_line fadeinup">
+            <span class="width_line w_line2"></span>
+          </div>
+          <div class="m_v_line fadeinup">
+            <span class="verticel_line v_line6"></span>
+            <span class="verticel_line v_line7"></span>
+            <span class="verticel_line v_line8"></span>
+          </div>
+          <div class="menu_second flex fadeinup">
+            <a href="#" class="link_btn btn_web">web・プログラミング</a>
+            <a href="#" class="link_btn btn_move">動画編集</a>
+            <a href="#" class="link_btn btn_hobby">趣味</a>
+          </div>
+        </div>
+        <div class="profile_warp fadeinup" id="profile">
+          <h1>profile</h1>
+          <div class="profile_box flex">
+            <div class="profile_text">
+              <h2>ヤスヒロ　サノ<br>（英語表記：Yasuhiro Sano）</h2>
+              <p>現在、本業は製造業の正社員として働いています。
+                 空いた時間に副業としてさまざまな仕事をさせて頂いています。</p>
+              <p>趣味と興味をきっかけにDIY、動画編集、プログラミングを行っています。
+                 自然豊かな生活を送りながら身近にいる人はもちろんのこと
+                 離れた人にも自分の出来る事を多くの人に役立ててほしいと思い
+                 フリーランスとしての活動をしています。</p>
+            </div>
+            <div class="profile_img">
+              <img src="F:\nagomi\img\mado.JPG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="works_warp fadeinup" id="works">
+          <h1>works</h1>
+          <div class="works_box flex">
+            <div class="work_box">
+              <div class="work_img">
+                <a href="#"><img src="img\web_img.jpg" alt="">
+                <div class="work_img_bg">
+                  <p>web/プログラミング</p>
+                </div></a>
+              </div>
+              <div class="work_text">
+                <p>使用言語：HTML/CSS/Jvaspript/jQuery</p>
+                <p>お客様のお持ちのデザインデータを元に、ヒヤリングを丁寧に行いWebページのコーディングをいたします。
+                  レスポンシブ対応やJavascriptを使用した動きのあるサイトなどさまざまなサイトのコーディングをさせていただきます。</p>
+              </div>
+            </div>
+            <div class="work_box">
+              <div class="work_img">
+                <a href="#"><img src="img\move_img.jpg" alt="">
+                  <div class="work_img_bg">
+                    <p>動画編集</p>
+                  </div></a>
+              </div>
+              <div class="work_text">
+                <p>ユーチューブや結婚式の動画等編集作業を行います。
+                  お客様とのヒヤリングを行い必要な素材をいただき迅速かつ丁寧に編集させて頂きます。</p>
+              </div>
+            </div>
+            <div class="work_box">
+              <div class="work_img">
+                <a href="#"><img src="img\hobby_img.jpg" alt=""><div class="work_img_bg">
+                  <p>趣味</p>
+                </div></a>
+              </div>
+              <div class="work_text">
+                <p>趣味や興味から色んなことに挑戦しています。その中で私のつたない技術で誰かの役に立てるのであれば喜んでやらせて頂きます。
+                  気になる・やってみたいという方には私の経験からわかる範囲でよければアドバイスなども可能です。</p>
+                <p>看板製作/フェンス製作/庭作りetc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_warp fadeinup_last" id="contact">
+          <h1>contact</h1>
+          <p>制作の依頼・ご相談などお気軽にお問い合わせくださいませ。</p>
+          <a class="btn_contact" href="https://docs.google.com/forms/d/e/1FAIpQLSfV6HFGxXqEdLF9AwdgffOxx6Lmh7T_rElbup7BiV9UfxwQ6Q/viewform?usp=sf_link">お問い合わせ</a>
+          <div class="fa_icon">
+            <div class="twitter">
+              <a href="#">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-1x fa-stack-1x"></i>
+              </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="footer_bg">
+        <div class="container">
+          <div class="footer_nav">
+            <ul class="footer_nav_ul flex">
+              <li><a class="fot_nav_btn" href="#top">top</a></li>
+              <li><a class="fot_nav_btn"  href="#profile">profile</a></li>
+              <li><a class="fot_nav_btn"  href="#works">works</a></li>
+              <li><a class="fot_nav_btn fot_nav_btn_last"  href="#">blog</a></li>
+            </ul>
+          </div>
+
+          <small>&copy 2020 yasuhiro sano</small>
+        </div>
+      </div>
+    </footer>
+    <script src="js\ham.js" type="text/javascript"></script>
+    <script src="js\fadeinUp.js" type="text/javascript"></script>
+  </body>
+</html>

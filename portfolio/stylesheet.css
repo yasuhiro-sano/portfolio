@@ -1,0 +1,499 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','Font Awesome 5 Free','Font Awesome 5 Brands', sans-serif !important;
+  font-size: 14px;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+.flex{
+  display: flex;
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo_bg{
+  height: 1000px;
+}
+.logo img{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+.header_box{
+  justify-content: space-between;
+}
+/*ハンバーガーメニューcss装飾*始まり*/
+.ham{
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  width: 40px;
+  height: 40px;
+  cursor:pointer;
+  z-index: 100;
+}
+
+.ham_line{
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 2px;
+  background-color: #333333;
+  transition: all 0.5s;
+}
+.ham_line1{
+  top:10px;
+}
+.ham_line2{
+  top:18px;
+}
+.ham_line3{
+  top:26px;
+}
+.clicked .ham_line1{
+  transform: rotate(45deg);
+  top:20px;
+  background-color: white;
+}
+.clicked .ham_line2{
+  width: 0px;
+}
+.clicked .ham_line3{
+  transform: rotate(-45deg);
+  top:20px;
+  background-color: white;
+}
+.menu{
+  position: fixed;
+  width: 300px;
+  height: 400px;
+  top:30px;
+  right: -400px;
+  background-color: rgba(65,113,156,0.8);
+  transition: 0.5s;
+  z-index: 99;
+}
+.clicked .menu{
+  right: 8px;
+}
+/*ハンバーガーメニューcss終わり*/
+.menu_list{
+  padding: 40px;
+}
+.menu_inner{
+  padding: 10px 0 0 30px ;
+}
+.menu li{
+  padding: 5px;
+  list-style:disc;
+  color:white;
+}
+.menu a{
+  display: block;
+  font-size: 16px;
+  text-decoration:underline;
+  color:white;
+}
+.menu_box{
+  padding: 30px 0 100px 0;
+}
+.link_btn{
+  display: block;
+  background-color: rgb(91,155,213);
+  border: solid 1px rgb(65,113,156);
+  font-size: 3vw;
+  padding: 0px 20px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.link_btn::before{
+  content: "";
+  position: absolute;
+  top:0px;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  transition: 0.3s;
+  opacity: 1;
+}
+.link_btn:hover::before{
+  left: 0px;
+  z-index: -1;
+}
+.link_btn:hover{
+  color:black;
+}
+.btn_top{
+  margin: 0 auto;
+  width: 10vw;
+}
+.menu_second{
+  justify-content: space-around;
+}
+/*ライン設定*/
+.m_v_line{
+  height: 50px;
+  width: 100%;
+}
+.m_w_line{
+  height: 1px;
+}
+.verticel_line{
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 1px;
+  height: 50px;
+  background-color: rgb(65,113,156);
+}
+.width_line{
+  position: absolute;
+  height: 1px;
+  background-color: rgb(65,113,156);
+}
+.w_line1{
+  left: 16%;
+  width: 73%;
+}
+.w_line2{
+  left: 28%;
+  width: 61%;
+}
+.v_line1{
+  left: 50%;
+}
+.v_line2{
+  left: 16%;
+}
+.v_line3{
+  left: 39%;
+}
+.v_line4{
+  left: 61%;
+}
+.v_line5{
+  left: 89%;
+}
+.v_line6{
+  left: 28%;
+}
+.v_line7{
+  left: 64%;
+}
+.v_line8{
+  left: 89%;
+}
+/*ライン設定終わり*/
+/*プロフィールCSS設定*/
+.profile_warp,.works_warp{
+  text-align: left;
+  margin-bottom: 100px;
+}
+.profile_warp h1,.works_warp h1,.contact_warp h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.profile_box{
+  justify-content:space-around;
+}
+.profile_text{
+  width: 400px;
+}
+.profile_text h2{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.profile_img img{
+  width: 400px;
+  height: auto;
+}
+.profile_text p{
+  margin-bottom: 10px;
+}
+/*プロフィールCSS設定終わり*/
+/*ワークスCSS設定*/
+.works_box{
+  justify-content: space-around;
+}
+.work_box{
+  width: 350px;
+}
+.work_img{
+  text-align: center;
+  position: relative;
+
+}
+.work_img_bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+  height: 150px;
+  background-color: rgba(255,255,255,0.5);
+}
+.work_img_bg:hover{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: rgba(91,155,213,0.8);
+  transition: 0.5s;
+}
+.work_img p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: 200px;
+}
+.work_img img{
+  width: 300px;
+  height: 200px;
+
+}
+.work_text{
+  padding: 10px 0;
+  width: 90%;
+  text-align: left;
+  margin-left: 5%;
+}
+/*ワークスCSS設定終わり*/
+/*問合せcSS設定終わり*/
+.contact_warp{
+  margin-bottom: 100px;
+}
+.contact_warp p{
+  padding-bottom: 30px;
+}
+.btn_contact{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-radius: 5px;
+  background-color: rgba(91,155,213,1);
+  border: solid 1px rgb(65,113,156);
+  display: block;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  line-height: 50px;
+  color:white;
+  overflow: hidden;
+  z-index:1;
+}
+.btn_contact::after{
+  content: "";
+  position: absolute;
+  top:50%;
+  left: 50%;
+  height: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateX(-50%)translateY(-50%)rotate(45deg);
+  transition: 0.3s;
+  z-index: -1;
+}
+.btn_contact:hover{
+  color:#42a5f5;
+}
+.btn_contact:hover:after{
+  height: 250%;
+  opacity: 1;
+}
+.btn_contact:active::after{
+  height: 350%;
+  opacity: 1;
+}
+.footer_bg{
+  background-color: rgb(246,246,246);
+  border-top: solid 1px rgb(196,196,196);
+  border-bottom: solid 1px rgb(196,196,196);
+  padding-bottom: 50px;
+}
+.footer_nav{
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+}
+.footer_nav_ul{
+  justify-content:center;
+}
+.fot_nav_btn{
+  display: block;
+  padding: 5px 40px;
+  margin: 5px 0;
+  border-left: solid 1px rgb(196,196,196);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+}
+.fot_nav_btn::before{
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  height: 50px;
+  width: 120px;
+  background-color: #fff;
+  transition: 0.5s;
+  z-index: -1;
+}
+.fot_nav_btn:hover::before{
+  bottom: 0;
+  margin-top: 0;
+}
+.fot_nav_btn:hover{
+  color: rgba(91,155,213,1);
+  border-bottom: solid 3px rgba(91,155,213,1);
+}
+.fot_nav_btn_last{
+  border-right: solid 1px rgb(196,196,196);
+}
+.fadeinup,.fadeinup_last{
+  transition: 1s;
+}
+
+/* worksページ用css  */
+.sub_logo_bg{
+  position: fixed;
+  z-index: -10;
+  top:50%;
+  left: 50%;
+  transform: translate(50%,50%);
+  opacity: 0.3;
+}
+.sub_titel{
+  margin-top: 50px;
+}
+.work_box_bg{
+  background-color: rgba(131,195,253,0.8);
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.sub_titel ul{
+  flex-wrap: wrap;
+}
+
+/* worksページ用css  */
+
+/* スクロールアイコン */
+.scroll{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 16px;
+  padding: 80px 20px 20px 20px;
+  background-color: rgba(91,155,213,1);
+  border-radius: 40.05px;
+}
+.scroll_s{
+  position: absolute;
+  top:0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  transform:rotate(-45deg);
+  animation: sdb 1.5s infinite;
+  opacity: 0;
+}
+.scroll::before{
+  position: absolute;
+  content: "";
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 40px;
+  padding: 80px 20px 20px 20px;
+  box-shadow: 0 0 0 0px rgba(91,155,213,1);
+  animation: abb 2s infinite;
+  z-index: -2;
+}
+.scroll_s:nth-of-type(1){
+  animation-delay:0s;
+}
+.scroll_s:nth-of-type(2){
+  animation-delay:0.15s;
+  top:12px;
+}
+.scroll_s:nth-of-type(3){
+  animation-delay:0.3s;
+  top:24px;
+}
+@keyframes sdb{
+  0%{
+    transformr:rotateY(0) rotateZ(-45deg) translate(0,0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+
+  }
+  100%{
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px,20px);
+    opacity: 0;
+  }
+}
+@keyframes abb{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0.5;
+  }
+  50%{
+    box-shadow: 0 0 0 30px rgba(91,155,213,0.5);
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+/* スクロールアイコン */
+.fa_icon{
+  padding: 20px 0;
+}
+.twitter{
+  text-align: center;
+}
+.fa-stack{
+  font-size: 20px;
+}
+.fa-circle{
+  color:rgba(91,155,213,1);
+}
+.fa-twitter{
+  color:white;
+  transform: rotate(0deg);
+}
+.fa-stack:hover{
+  transition: 1s;
+  transform: rotate(360deg);
+  color:rgba(91,155,213,1);
+}

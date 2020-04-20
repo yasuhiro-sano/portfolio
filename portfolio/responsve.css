@@ -1,0 +1,77 @@
+/*タブレット用*/
+@media screen and (min-width: 640px) and (max-width:1170px) { /*ウィンドウ幅が640px～1023pxまでの場合に適用*/
+.container{
+  width: 90%;
+}
+.works_box{
+  flex-wrap: wrap;
+}
+.work_box{
+  margin-bottom: 50px;
+}
+.profile_text{
+  width: 50%;
+  margin-right: 30px;
+}
+.profile_img{
+  width: 50%;
+}s
+.profile_img img{
+  width: 100%;
+}
+.sub_titel{
+  text-align: center;
+}
+}
+
+
+/*スマホ用*/
+@media screen and (max-width: 639px) { /*ウィンドウ幅が最大639pxまでの場合に適用*/
+.ham{
+  top:30px;
+  right: 30px;
+}
+.logo_bg{
+  height: 800px;
+}
+.menu_box{
+  display: none;
+}
+
+.flex{
+  display: block;
+}
+.container{
+  width: 90%;
+}
+.profile_warp h1,.works_warp h1{
+  text-align: center;
+}
+.profile_box{
+  text-align: center;
+}
+.profile_text{
+  width: 100%;
+  text-align: left;
+}
+.profile_img img{
+  width: 90%;
+}
+.work_box{
+  margin-bottom: 50px;
+}
+.footer_nav{
+  width: 100%;
+}
+.footer_nav_ul{
+  display: flex;
+}
+.fot_nav_btn{
+  padding: 5px 10px;
+}
+
+
+/*pc用*/
+@media screen and (min-width:1170px) { /*ウィンドウ幅が1024px以上の場合に適用*/
+
+}
